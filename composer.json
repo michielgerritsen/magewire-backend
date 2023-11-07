@@ -1,0 +1,29 @@
+{
+  "name": "magewirephp/magewire-backend",
+  "description": "Support Magewire in the Magento backend",
+  "version": "0.0.1",
+  "type": "magento2-module",
+  "require": {
+    "magento/framework": "*",
+    "php": ">=8.1",
+    "symfony/http-foundation": "^5.4 || ^6.0"
+  },
+  "support": {
+    "issues": "https://github.com/magewirephp/magewire/discussions"
+  },
+  "authors": [
+    {
+      "name": "Willem Poortman",
+      "role": "Founder / Developer"
+    }
+  ],
+  "license": "MIT",
+  "autoload": {
+    "files": [
+      "src/registration.php"
+    ],
+    "psr-4": {
+      "Magewirephp\\MagewireBackend\\": "src/"
+    }
+  }
+}
