@@ -1,10 +1,11 @@
 <?xml version="1.0"?>
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd"
->
-  <module name="Magewirephp_MagewireBackend">
-    <sequence>
-      <module name="Magewirephp_Magewire"/>
-    </sequence>
-  </module>
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
+    <module name="Magewirephp_MagewireBackend">
+        <sequence>
+            <module name="Magento_Backend"/>
+            <module name="Magewirephp_Magewire"/>
+            <module name="Magewirephp_MagewireRequireJs"/>
+        </sequence>
+    </module>
 </config>
