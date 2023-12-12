@@ -27,7 +27,7 @@ use Symfony\Component\HttpKernel\Exception\HttpException;
 
 class Livewire extends Action
 {
-    const ADMIN_RESOURCE = 'Magento_Backend::admin';
+    const ADMIN_RESOURCE = 'Magewirephp_MagewireBackend::admin';
 
     protected HttpFactory $httpFactory;
     protected JsonFactory $resultJsonFactory;
