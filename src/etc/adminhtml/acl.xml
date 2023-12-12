@@ -3,7 +3,7 @@
     <acl>
         <resources>
             <resource id="Magento_Backend::admin">
-                <resource id="Magewirephp_MagewireBackend::generic" title="MageWire Access"/>
+                <resource id="Magewirephp_MagewireBackend::admin" title="MageWire Access"/>
             </resource>
         </resources>
     </acl>

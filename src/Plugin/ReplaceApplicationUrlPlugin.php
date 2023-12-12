@@ -17,6 +17,6 @@ class ReplaceApplicationUrlPlugin
 
     public function afterGetApplicationUrl(Magewire $magewire, string $applicationUrl): string
     {
-        return rtrim($this->url->getUrl('magewire/post'),'/');
+        return rtrim($this->url->getUrl('magewire/post/livewire'),'/');
     }
 }
