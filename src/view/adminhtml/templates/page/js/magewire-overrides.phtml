@@ -1,0 +1,21 @@
+<?php declare(strict_types=1);
+?>
+<script>
+    // Apply the Magento Admin Panel FORM_KEY to the Livewire POST requests
+    require(['Magewirephp_MagewireRequireJs/js/magewire'], function() {
+        window.Livewire.connection.sendMessage = new Proxy(Livewire.connection.sendMessage, {
+            apply: function( target, that, args ) {
+                let message = args[0];
+                message.payload = new Proxy(message.payload, {
+                    apply: function (target, that, args) {
+                        let data = target.apply(that, args);
+                        data.form_key = window.FORM_KEY;
+                        return data;
+                    }
+                })
+
+                return target.apply(that, [message]);
+            }
+        })
+    });
+</script>
