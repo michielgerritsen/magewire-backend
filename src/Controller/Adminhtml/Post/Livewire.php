@@ -97,6 +97,11 @@ class Livewire extends Action
         }
     }
 
+    public function _processUrlKeys()
+    {
+        return true;
+    }
+
     /**
      * @throws NoSuchEntityException
      */
